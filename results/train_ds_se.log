@@ -1,0 +1,10 @@
+==========================================================================
+模型 ds_se | 参数 0.165 M | MACs 6.60 M | 训练样本 25000
+epochs=8 batch=256 lr=0.05
+Epoch  1/8 | train_loss=1.8837 | test_acc=35.43% | test_loss=1.8315 | 30.9s
+Epoch  2/8 | train_loss=1.4680 | test_acc=38.70% | test_loss=1.7558 | 62.0s
+Epoch  4/8 | train_loss=1.0858 | test_acc=62.70% | test_loss=1.0425 | 123.9s
+Epoch  6/8 | train_loss=0.9053 | test_acc=66.97% | test_loss=0.9265 | 186.8s
+Epoch  8/8 | train_loss=0.8184 | test_acc=70.33% | test_loss=0.8372 | 259.6s
+--------------------------------------------------------------------------
+ds_se 完成：best_acc=70.33% | test_acc=70.33% | params=0.165M | MACs=6.60M | 269.6s

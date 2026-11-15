@@ -1,0 +1,9 @@
+data/
+__pycache__/
+*.pyc
+results/*.pt
+results/*.npz
+.dsh-office-preview/
+cnn_hw.bundle
+*.zip
+~$*

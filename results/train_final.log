@@ -1,0 +1,10 @@
+==========================================================================
+模型 final | 参数 0.165 M | MACs 6.60 M | 训练样本 25000
+epochs=8 batch=256 lr=0.05
+Epoch  1/8 | train_loss=2.1440 | test_acc=27.36% | test_loss=1.9814 | 86.7s
+Epoch  2/8 | train_loss=1.8554 | test_acc=34.83% | test_loss=1.7807 | 171.9s
+Epoch  4/8 | train_loss=1.5462 | test_acc=44.39% | test_loss=1.5164 | 352.2s
+Epoch  6/8 | train_loss=1.2953 | test_acc=54.08% | test_loss=1.2825 | 528.9s
+Epoch  8/8 | train_loss=1.1398 | test_acc=57.51% | test_loss=1.1836 | 714.5s
+--------------------------------------------------------------------------
+final 完成：best_acc=57.51% | test_acc=57.51% | params=0.165M | MACs=6.60M | 725.9s
