@@ -1,5 +1,7 @@
 # CIFAR-10 CNN 结构改进实验
 
+代码仓库：<https://github.com/zhumotk/cnn-hw-cifar10>
+
 课内大作业：在 CIFAR-10 上实现一个 VGG 式经典 CNN，并从深度可分离卷积、SE 通道注意力、GroupNorm/GELU 三个方向做结构改进与消融对比。
 
 ## 模型

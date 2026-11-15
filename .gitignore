@@ -7,3 +7,6 @@ results/*.npz
 cnn_hw.bundle
 *.zip
 ~$*
+_旧版备份_无仓库地址/
+askpass.bat
+fix_ssh_key.py

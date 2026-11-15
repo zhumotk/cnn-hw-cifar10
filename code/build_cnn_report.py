@@ -11,7 +11,7 @@ from docx.oxml import OxmlElement
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES = os.path.join(BASE, "results")
-OUT = os.path.join(BASE, "课内大作业报告_基于结构改进的轻量CNN图像分类.docx")
+OUT = os.environ.get("CNN_REPORT_OUT", os.path.join(BASE, "课内大作业报告_基于结构改进的轻量CNN图像分类.docx"))
 m = {k: json.load(open(os.path.join(RES, f"metrics_{k}.json"), encoding="utf-8"))
      for k in ["base", "ds", "ds_se", "final"]}
 P = lambda x: f"{x*100:.2f}%"
@@ -428,7 +428,7 @@ python code/train_cnn.py --model final --epochs 8 --batch 256 --train_size 25000
 python code/make_figures.py""", "运行命令")
 para("训练脚本固定随机种子 42，四个模型使用相同的训练/测试划分；每个模型的最优权重、指标 JSON 和训练日志保存在 results 目录。"
      "报告中的准确率、参数量和 MACs 均由脚本输出并写入 JSON，可直接复核。")
-para("代码仓库：本作业已初始化本地 Git 仓库并提交全部源码、README 和运行说明；远程仓库地址（GitHub/Gitee）见提交时补充。")
+para("代码仓库：https://github.com/zhumotk/cnn-hw-cifar10（main 分支，包含全部源码、README、运行说明和结果文件）。")
 
 doc.save(OUT)
 print("saved:", OUT)
